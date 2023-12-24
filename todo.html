@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo LIST 2</title>
+
+    <link  rel="stylesheet" href="./todo.css">
+    <link  rel="stylesheet"  media="screen and (max-width:768px)" href="./todoMobile.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" 
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<!-- todo list sticky scroll -->
+<section class="responsiv-browser">
+<!-- header -->
+    <div class="nav-bar">
+    <ul class="nav">
+   <div class="artical"><il>ARTICALS</il> </div>
+   <div><il>HOME</il> </div>
+   <div class="about"><il>ABOUT</il> </div>
+    </ul>
+</div>
+<section class="container">
+    <section class="container-all">   
+        <section class="container-input">
+        <form class="form">
+            <input class="input"/>
+            <button id="plus" type="submit"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+        </form>
+    </section>
+    
+    <div class="container_drow">
+        <select class="drop-down">
+            <option  value="all">all</option> 
+        <option value="completed">completed</option>
+        <option value="uncompeleted">uncompeleted</option>
+    </select>
+    </div>
+    
+    <ul class="todo-list">
+        <!-- <li>
+            <p class="task">task 1</p>
+            <span></span>
+        <button class="trash"><i class="fa fa-times" aria-hidden="true"></i></button>
+        <button class="check"><i class="fa fa-check-circle" aria-hidden="true"></i></button>
+    </li> -->
+    </ul>
+</section>
+<script src="./todo.js"></script>
+</body>
+</html>
