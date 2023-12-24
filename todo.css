@@ -1,0 +1,214 @@
+@font-face {
+    font-family: "roboto";
+    src: url(./Roboto-Medium.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "roboto", Arial, Helvetica, sans-serif;
+  font-weight: 200;
+}
+
+body {
+  overflow-y: scroll;
+  background-image: url(./time-organization1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.nav-bar {
+  background-color: rgb(200, 200, 200, 0.5);
+  direction: ltr;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid white;
+
+  width: 100%;
+  height: 60px;
+}
+.nav div {
+  display: inline-block;
+  color: #3d3938;
+  font-size: 20px;
+  width: 250px;
+  height: 60px;
+  text-align: center;
+  padding: 20px;
+}
+
+.nav div:hover {
+  background-color: white;
+  border-radius: 10px;
+}
+.container-all {
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: px;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+}
+.container-input {
+  display: flex;
+  justify-items: left;
+  width: 300px;
+  height: 28px;
+  background-color: rgb(250, 248, 250);
+  border-radius: 5px;
+}
+.input {
+  padding-left: 5px;
+  border: 0px;
+  border-radius: 5px 0 0 5px;
+  background-color: #fff;
+  color: #3d3938;
+  width: 90%;
+  height: 28.5px;
+  font-size: 18px;
+}
+.input:focus {
+  outline: none;
+}
+#plus {
+  position: absolute;
+  background-color: #fff;
+  border: 00.5px;
+  border-radius: 0px 5px 5px 0px;
+  width: 10%;
+  height: 1.8rem;
+}
+#plus:hover {
+  background-color: rgb(240, 120, 99);
+}
+.fa-plus-circle {
+  cursor: pointer;
+  font-size: 1.4rem;
+  background-color: rgb(240, 88, 61);
+  color: #fff;
+  border-radius: 20px;
+}
+/* drop draw-- */
+.container_drow {
+  margin-left: 5px;
+}
+.drop-down {
+  color: #3d3938;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+}
+.drop-down:focus {
+  outline: 0;
+}
+/* task of todo list  */
+.form {
+  width: 100%;
+  position: relative;
+  font-size: 18px;
+}
+.todo-list {
+  list-style-type: none;
+  margin-left: -115px;
+  margin-top: 8px;
+  position: absolute;
+  top: 30px;
+  border-radius: 5px;
+}
+.todo-li {
+  position: relative;
+  width: 300px;
+  height: 30px;
+  background-color: #fff;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+.task {
+  background-color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  display: inline-block;
+  width: 50%;
+  height: 30px;
+  font-size: 18px;
+  border-radius: 5px 0 0 5px ;
+  color: #3d3938;
+}
+.date{
+    margin-right: 20px;
+}
+
+.todo-list span {
+  position: absolute;
+  right: 100px;
+  top: 4px;
+  width: 0.1rem;
+}
+
+.select_text button {
+  cursor: pointer;
+  border: none;
+  width: 20px;
+  height: 30px;
+  position: absolute;
+  background-color: rgb(250, 248, 250);
+}
+.check {
+  position: absolute;
+  border-radius: 100%;
+  border: none;
+  right: 2px;
+  top: 4px;
+  font-size: 15px;
+  background-color: yellowgreen;
+  color: #fff;
+}
+.todo___remove {
+  position: absolute;
+  right: 18px;
+  top: 4px;
+  background-color: #fff;
+  font-size: 15px;
+  border: none;
+  color: rgb(240, 120, 99);
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.back-ground {
+  width: 100vw;
+  height: 100vh;
+
+  margin-top: 300px;
+  border-top: 10px groove burlywood;
+}
+
+.content-text {
+  margin-top: 250px;
+  background-color: rgb(0, 0, 0, 0.4);
+  width: 600px;
+  height: 400px;
+  border-radius: 20px;
+}
+
+.text div {
+  width: 50px;
+}
+
+.text {
+  width: fit-content;
+  text-align: justify;
+}
+
+.div-p {
+  width: 240px;
+  height: 200px;
+  margin: 60px auto;
+  text-align: justify;
+}
+
+button > i {
+  pointer-events: none;
+}
